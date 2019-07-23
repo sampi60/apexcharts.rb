@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
 module ApexCharts::Options
-  class TooltipOptions < ::SmartKv
-    optional *%i[
-      custom
-      enabled
-      fillSeriesColor
-      fixed
-      followCursor
-      intersect
-      inverseOrder
-      items
-      marker
-      onDatasetHover
-      shared
-      style
-      theme
-      x
-      y
-      z
-    ]
+  class TooltipOptions < Schema
+    define do
+      optional(:custom)
+      optional(:enabled)
+      optional(:fillSeriesColor)
+      optional(:fixed)
+      optional(:followCursor)
+      optional(:intersect)
+      optional(:inverseOrder)
+      optional(:items)
+      optional(:marker)
+      optional(:onDatasetHover)
+      optional(:shared)
+      optional(:style)
+      optional(:theme)
+      optional(:x)
+      optional(:y)
+      optional(:z)
+    end
   end
 end

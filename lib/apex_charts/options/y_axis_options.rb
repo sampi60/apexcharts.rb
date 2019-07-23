@@ -4,15 +4,15 @@ require_relative 'axis_options'
 
 module ApexCharts::Options
   class YAxisOptions < AxisOptions
-    optional *%i[
-      decimalsInFloat
-      forceNiceScale
-      logarithmic
-      opposite
-      reversed
-      seriesName
-      show
-      showAlways
-    ]
+    define do
+      optional(:decimalsInFloat)
+      optional(:forceNiceScale)
+      optional(:logarithmic)
+      optional(:opposite)
+      optional(:reversed)
+      optional(:seriesName)
+      optional(:show)
+      optional(:showAlways)
+    end
   end
 end

@@ -4,11 +4,11 @@ require_relative 'axis_options'
 
 module ApexCharts::Options
   class XAxisOptions < AxisOptions
-    optional *%i[
-      categories
-      position
-      range
-      tickPlacement
-    ]
+    define do
+      optional(:categories)
+      optional(:position)
+      optional(:range)
+      optional(:tickPlacement)
+    end
   end
 end

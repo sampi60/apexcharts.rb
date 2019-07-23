@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 module ApexCharts::Options
-  class PlotOptions < ::SmartKv
-    optional *%i[
-      bar
-      candlestick
-      heatmap
-      pie
-      radar
-      radialBar
-    ]
+  class PlotOptions < Schema
+    define do
+      optional(:bar)
+      optional(:candlestick)
+      optional(:heatmap)
+      optional(:pie)
+      optional(:radar)
+      optional(:radialBar)
+    end
   end
 end
