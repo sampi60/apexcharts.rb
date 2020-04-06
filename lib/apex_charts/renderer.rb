@@ -15,7 +15,7 @@ module ApexCharts
                end
         html + <<~HTML
           <div id="#{renderer.element_id}" class="#{renderer.css_class}" style="#{renderer.style}"></div>
-          <script type="text/javascript">
+          <script type="application/javascript">
             var #{renderer.variable} = new ApexCharts(document.querySelector("##{renderer.element_id}"), #{substitute_function_object(renderer.options.to_json)});
             #{renderer.variable}.render();
           </script>
